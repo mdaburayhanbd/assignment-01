@@ -138,4 +138,141 @@ header{
 .btn.secondary:hover {
   background: #ffffff1a;
 }
-  
+
+.notes-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.notes-section h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #7b8794;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.note-card {
+  background: #fff;
+  color: #0a2540;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px #00000026;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #F95555;
+  color: #fff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 20px;
+}
+
+
+.note-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.note-card p {
+  font-size: 16px;
+  color: #5f6c7b;
+  line-height: 1.6;
+}
+.brain-section {
+  padding: 100px 40px;
+  background: #ffffff;
+}
+
+.brain-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.brain-image {
+  display: flex;
+  justify-content: center;
+}
+.brain-image img {
+  max-width: 100%;
+  width: 420px;
+  height: auto;
+}
+.brain-content .label {
+  color: #30B868;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.brain-content h2 {
+  font-size: 48px;
+  margin: 16px 0;
+  color: #001931;
+}
+
+.brain-content p {
+  color: #627382;
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.brain-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brain-content li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  color: #001931;
+  font-size: 16px;
+}
+
+.brain-content li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+}
+@media (max-width: 900px) {
+  .brain-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .brain-image img {
+    width: 320px;
+  }
+
+  .brain-content p {
+    margin: auto auto 30px;
+  }
+
+  .brain-content ul {
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+  }
+}
